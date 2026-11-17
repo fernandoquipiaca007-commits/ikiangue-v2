@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IKIANGUE — Segurança que se vê</title>
+<meta name="description" content="IKIANGUE Formação & Workshop — identificação e avaliação de riscos, formação em HSST, sinalética e inspeção de extintores em Luanda.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:title" content="IKIANGUE — Segurança que se vê">
+<meta property="og:description" content="Gestão de risco ocupacional, formação e inspeção de extintores em Luanda.">
+<meta property="og:image" content="https://fernandoquipiaca007-commits.github.io/ikiangue-v2/img/grupo-campo.jpg">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="#topo" class="brand"><img src="img/logo.svg" alt="" width="36" height="36"><span><b>IKIANGUE</b><small>Formação | Workshop</small></span></a>
+  <nav aria-label="Principal"><a href="#inspecao">Inspeção</a><a href="#servicos">Serviços</a><a href="#galeria">Projetos</a><a href="#contacto" class="pill">Contacto</a></nav>
+</header>
+
+<main>
+<section class="hero" id="topo">
+  <div class="hero-txt">
+    <p class="tag"><span class="sq"></span>HSST · Gestão de Risco Ocupacional · Luanda</p>
+    <h1>Segurança<br>que <span class="hl">se vê.</span></h1>
+    <p class="lead">Identificamos, avaliamos e prevenimos os riscos que ameaçam a saúde das pessoas e a produtividade da sua empresa — com formação prática, sinalética clara e meios de emergência sempre operacionais.</p>
+    <div class="ctas"><a class="btn" href="#contacto">Pedir avaliação de risco</a><a class="btn line" href="#inspecao">Ver inspeção ao vivo ↓</a></div>
+  </div>
+  <div class="board" id="board" aria-label="Painel de sinalética de segurança"></div>
+  <figure class="hero-photo"><img src="img/turma-sala.webp" alt="Turma de formação da IKIANGUE com extintores" width="1600" height="1200"><figcaption><span>Em parceria com</span>Academia Núcleo dos Engenheiros</figcaption></figure>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="tk" id="tk"></div></div>
+
+<section class="about" id="sobre">
+  <div class="col-l"><p class="num">01</p><h2>Prevenir<br>é salvar.</h2></div>
+  <div class="col-r">
+    <p class="intro">A IKIANGUE Formação &amp; Workshop é uma startup angolana especializada em Gestão de Risco Ocupacional. A nossa missão é proteger vidas e patrimónios, promovendo uma cultura sólida de Higiene, Saúde e Segurança no Trabalho.</p>
+    <p>Somos uma equipa multidisciplinar. Com soluções adaptadas à realidade de cada cliente, unimos conhecimento técnico, inovação e compromisso ético para criar ambientes de trabalho mais seguros e eficientes.</p>
+    <ul class="pillars"><li><b>Proteger</b>vidas e patrimónios</li><li><b>Formar</b>equipas e líderes</li><li><b>Monitorizar</b>indicadores de HSST</li></ul>
+  </div>
+</section>
+
+<!-- INSPEÇÃO INTERATIVA -->
+<section class="inspect" id="inspecao">
+  <div class="sec-top"><p class="num">02</p><h2>Inspeção ao vivo.</h2><p class="sub">É assim que revemos cada extintor. Toque nos pontos ou inicie a inspeção completa.</p></div>
+  <div class="ins-wrap">
+    <div class="ins-stage">
+      <svg id="extSvg" viewBox="0 0 300 520" aria-label="Extintor em inspeção">
+        <defs>
+          <linearGradient id="bodyG" x1="0" x2="1"><stop offset="0" stop-color="#9e1510"/><stop offset=".35" stop-color="#e2382b"/><stop offset=".55" stop-color="#f05a48"/><stop offset="1" stop-color="#8f120d"/></linearGradient>
+          <linearGradient id="metalG" x1="0" x2="1"><stop offset="0" stop-color="#3a3d3c"/><stop offset=".5" stop-color="#8b908d"/><stop offset="1" stop-color="#2b2e2d"/></linearGradient>
+        </defs>
+        <ellipse cx="150" cy="500" rx="80" ry="10" fill="#000" opacity=".12"/>
+        <path d="M128 70h44v28h-44z" fill="url(#metalG)"/>
+        <path d="M104 92h92v36h-92z" rx="6" fill="url(#metalG)"/>
+        <path id="lever" d="M98 84l110-22 4 10-110 22z" fill="#2b2e2d"/>
+        <path d="M100 112h-40l-6 8h46z" fill="#2b2e2d"/>
+        <g id="pin"><circle cx="186" cy="104" r="11" fill="none" stroke="#ffc427" stroke-width="4"/><path d="M175 104h-30" stroke="#ffc427" stroke-width="4"/><path id="seal" d="M190 112l8 14" stroke="#16a34a" stroke-width="3"/></g>
+        <g id="gauge"><circle cx="150" cy="110" r="22" fill="#f4f2ec" stroke="#2b2e2d" stroke-width="4"/><path d="M134 116a17 17 0 0 1 4-18" stroke="#e2382b" stroke-width="5" fill="none"/><path d="M140 96a17 17 0 0 1 20 0" stroke="#16a34a" stroke-width="5" fill="none"/><path d="M162 98a17 17 0 0 1 4 18" stroke="#e2382b" stroke-width="5" fill="none"/><line id="needle" x1="150" y1="112" x2="150" y2="94" stroke="#111" stroke-width="2.5" stroke-linecap="round" style="transform-origin:150px 112px;transform:rotate(-70deg)"/><circle cx="150" cy="112" r="3" fill="#111"/></g>
+        <path d="M86 150c0-14 12-22 26-22h76c14 0 26 8 26 22v320c0 12-8 20-20 20H106c-12 0-20-8-20-20z" fill="url(#bodyG)"/>
+        <g id="label"><rect x="100" y="220" width="100" height="150" rx="6" fill="#f4f2ec"/><rect x="100" y="220" width="100" height="24" rx="6" fill="#0b735a"/><text x="150" y="237" text-anchor="middle" font-family="Barlow Condensed" font-weight="700" font-size="14" fill="#ffc427">IKIANGUE</text><text x="150" y="276" text-anchor="middle" font-family="Barlow Condensed" font-weight="800" font-size="30" fill="#111">PÓ ABC</text><text x="150" y="296" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#555">6 KG · PRESSURIZADO</text><rect x="110" y="310" width="24" height="24" fill="#2e7d32"/><rect x="138" y="310" width="24" height="24" fill="#c62828"/><rect x="166" y="310" width="24" height="24" fill="#1565c0"/><text font-family="Barlow Condensed" font-weight="800" font-size="18" fill="#fff"><tspan x="117" y="328">A</tspan><tspan x="145" y="328">B</tspan><tspan x="173" y="328">C</tspan></text><text id="dateTxt" x="150" y="356" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#555">PRÓX. REVISÃO: —</text></g>
+        <path id="hose" d="M196 104c40 4 50 40 46 120s-6 170 6 210" stroke="#1a1a1a" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <path d="M240 428l16 0 6 46h-28z" fill="#1a1a1a"/>
+        <g id="stamp" opacity="0"><g transform="translate(150 300) rotate(-14)"><rect x="-108" y="-36" width="216" height="72" rx="8" fill="none" stroke="#0b8a4a" stroke-width="6"/><text y="-4" text-anchor="middle" font-family="Barlow Condensed" font-weight="800" font-size="34" fill="#0b8a4a" letter-spacing="2">APROVADO</text><text y="22" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#0b8a4a" letter-spacing="1">INSPEÇÃO IKIANGUE</text></g></g>
+      </svg>
+      <button class="hot" data-k="0" style="left:50%;top:21%" aria-label="Manómetro">1</button>
+      <button class="hot" data-k="1" style="left:63%;top:19%" aria-label="Selo e cavilha">2</button>
+      <button class="hot" data-k="2" style="left:81%;top:52%" aria-label="Mangueira e difusor">3</button>
+      <button class="hot" data-k="3" style="left:30%;top:47%" aria-label="Rótulo e validade">4</button>
+      <button class="hot" data-k="4" style="left:28%;top:88%" aria-label="Fixação e sinalização">5</button>
+    </div>
+    <div class="ins-panel">
+      <ol class="checks" id="checks"></ol>
+      <button class="btn full" id="runIns" type="button">▶ Iniciar inspeção completa</button>
+      <p class="ins-note" id="insNote" aria-live="polite">5 pontos de controlo · resultado em segundos</p>
+    </div>
+  </div>
+</section>
+<section class="classes" id="classes">
+  <div class="sec-top"><p class="num">03</p><h2>Cada fogo tem<br>a sua resposta.</h2><p class="sub">Ensinamos a reconhecer a classe de fogo antes de agir — a diferença entre controlar e agravar.</p></div>
+  <div class="cls-tabs" role="tablist" id="clsTabs"></div>
+  <div class="cls-body" id="clsBody" role="tabpanel"></div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="sec-top"><p class="num">04</p><h2>Áreas de atuação.</h2></div>
+  <div class="svc-list" id="svcList"></div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="sec-top"><p class="num">05</p><h2>Registo de campo.</h2><p class="sub">Formações práticas, simulacros e instalação de meios de emergência.</p></div>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="exit-sign">
+    <div class="exit-ico" id="exitIco"></div>
+    <div class="exit-txt"><p class="tag light">Saída de emergência para a sua empresa</p><h2>Fale connosco<br>antes do incidente.</h2></div>
+  </div>
+  <div class="ct-grid">
+    <a class="ct" href="https://wa.me/244946541222" target="_blank" rel="noopener"><span>WhatsApp</span><b>+244 946 541 222</b><i>→</i></a>
+    <a class="ct" href="https://wa.me/244930469677" target="_blank" rel="noopener"><span>WhatsApp</span><b>+244 930 469 677</b><i>→</i></a>
+    <a class="ct" href="mailto:irenemanuel@outlook.pt"><span>Email</span><b>irenemanuel@outlook.pt</b><i>→</i></a>
+    <div class="ct"><span>Morada</span><b>Rua Revolução de Outubro, Maianga · Luanda</b></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="f-brand"><img src="img/logo.svg" alt="" width="44" height="44"><p><b>IKIANGUE Formação &amp; Workshop</b><br>NIF 50006833760 · Em parceria com a Academia Núcleo dos Engenheiros</p></div>
+  <p class="f-copy">© <span id="yr"></span> IKIANGUE · Proteger vidas e patrimónios.</p>
+</footer>
+
+<div class="lb" id="lb" hidden><button class="lb-x" id="lbX" aria-label="Fechar">×</button><button class="lb-n prev" id="lbP" aria-label="Anterior">‹</button><img id="lbImg" alt=""><button class="lb-n next" id="lbN" aria-label="Seguinte">›</button><p id="lbCap"></p></div>
+<a class="wa" href="https://wa.me/244946541222" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3z"/></svg></a>
+<script src="js/signs.js?v=2"></script>
+<script src="js/main.js?v=2" defer></script>
+<script src="js/inspect.js?v=2" defer></script>
+</body>
+</html>
