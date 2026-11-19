@@ -169,3 +169,18 @@ a.ct:hover{background:var(--ink);color:var(--paper)}
 .f-brand{display:flex;gap:14px;align-items:center}.f-brand b{color:var(--ink)}
 .wa{position:fixed;right:16px;bottom:16px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.25)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.sign{opacity:1;transform:none}}
+
+/* CITAÇÃO */
+.quote{position:relative;padding:clamp(70px,10vw,140px) var(--pad);background:var(--ink);color:var(--paper);overflow:hidden}
+.quote::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 18px,var(--ink) 18px 36px)}
+.q-mark{position:absolute;top:clamp(-10px,-2vw,0px);left:calc(var(--pad) - .08em);font:800 clamp(160px,22vw,320px)/1 var(--d);color:var(--red);opacity:.9;pointer-events:none}
+.quote blockquote{position:relative;max-width:1150px;font:600 clamp(28px,4.4vw,64px)/1.12 var(--b);letter-spacing:-.02em}
+.quote .w{opacity:.18;transition:opacity .45s}
+.quote .w.l{opacity:1}
+.quote mark{background:none;color:var(--yellow);position:relative;white-space:nowrap}
+.quote mark::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.09em;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.7,0,.2,1)}
+.quote mark.on::after{transform:scaleX(1)}
+.q-by{display:flex;gap:14px;align-items:center;margin-top:clamp(30px,4vw,50px);font-size:14px;color:#a9a69d}
+.q-by b{display:block;color:var(--paper);font-size:16px}
+@media(max-width:620px){.quote mark{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.quote .w{opacity:1}.quote mark::after{transform:scaleX(1)}}

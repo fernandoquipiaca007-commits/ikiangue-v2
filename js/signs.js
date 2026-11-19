@@ -1,4 +1,4 @@
-/* Pictogramas originais em estilo de sinalética de segurança */
+/* Pictogramas originais em estilo de sinalização de segurança */
 window.SIGNS={
   ext:{bg:'#d7261e',label:'Extintor',svg:'<path fill="#fff" d="M40 22h14v8h-14z"/><path fill="#fff" d="M34 34c0-3 3-5 6-5h14c3 0 6 2 6 5v40c0 3-2 5-5 5H39c-3 0-5-2-5-5z"/><path stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" d="M54 25h12l6 6M40 25c-8 0-14 6-14 16v10"/><circle cx="26" cy="54" r="3" fill="#fff"/>'},
   exit:{bg:'#0b8a4a',label:'Saída',svg:'<path fill="none" stroke="#fff" stroke-width="4" d="M58 16h22v68H58"/><circle cx="38" cy="22" r="7" fill="#fff"/><path fill="#fff" d="M30 32l14 2 10 12-5 4-8-8-4 12 10 8 2 20h-7l-3-16-10-6-6 22h-8l8-28 2-12-7 5v10h-6V43z"/>'},
